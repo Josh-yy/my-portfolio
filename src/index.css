@@ -20,9 +20,9 @@
 }
 
 html, body {
-  scroll-behavior: smooth; /* optional: smooth transition */
+  scroll-behavior: smooth; 
 }
 
 main {
-  scroll-snap-type: y mandatory; /* 👈 snap on vertical scroll */
+  scroll-snap-type: y mandatory;
 }

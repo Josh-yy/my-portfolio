@@ -1,0 +1,128 @@
+.overlay{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 100;
+    display: flex;
+    animation: dissapear 1s ease forwards;
+    animation-delay: 9s;
+}
+
+.bar{
+    width: 10vw;
+    height: 100vh;
+    background-color: rgb(19, 19, 19);
+    animation-timing-function: linear;
+    animation: transition1by1 2s forwards;
+    
+}
+
+.bar:nth-child(1){
+    animation-delay: 6s;
+}
+.bar:nth-child(2){
+    animation-delay: 6.1s;
+}
+.bar:nth-child(3){
+    animation-delay: 6.2s;
+}
+.bar:nth-child(4){
+    animation-delay: 6.3s;
+}
+.bar:nth-child(5){
+    animation-delay: 6.4s;
+}
+.bar:nth-child(6){
+    animation-delay: 6.5s;
+}
+.bar:nth-child(7){
+    animation-delay: 6.6s;
+}
+.bar:nth-child(8){
+    animation-delay: 6.7s;
+}
+.bar:nth-child(9){
+    animation-delay: 6.8s;
+}
+.bar:nth-child(10){
+    animation-delay: 6.9s;
+}
+
+
+.quote{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    z-index: 101;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: aliceblue;
+    overflow: hidden;
+    padding-left: 10vh;
+    animation: dissapear 1s ease forwards;
+    animation-delay: 9s;
+}
+
+.words{
+    display: flex;
+    flex-direction: column;
+    height: 20vh;
+    padding-bottom: 1%;   
+    overflow: hidden;
+}
+
+.word{
+    font-size: 20vh;
+    transform: translateY(25vh);
+    animation: transUp 6s ease forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes transUp {
+    0% {
+        transform: translateY(25vh);
+    }
+    15% {
+        transform: translateY(0);
+    }
+    30% {
+        transform: translateY(-25vh);
+    }
+    45% {
+        transform: translateY(-45vh);
+    }
+    60% {
+        transform: translateY(-65vh);
+        
+    }
+    75% {
+        transform: translateY(-85vh);
+        opacity: 1;
+    }
+    100%{
+        transform: translateY(-100vh);
+        opacity: 0;
+        display: none;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
+
+@keyframes transition1by1 {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-100vh);
+    }
+}
+
+@keyframes dissapear {
+    to{
+        opacity: 0;
+        display: none;
+        visibility: hidden;
+        pointer-events: none;
+    }
+}
