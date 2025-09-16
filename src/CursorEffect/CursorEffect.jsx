@@ -29,7 +29,7 @@ function CursorEffect(){
 
     return(
         <>
-        <div ref={circleRef} className='circle'></div>
+        <div ref={circleRef} className={styles.circle}></div>
         </>
 
     );
