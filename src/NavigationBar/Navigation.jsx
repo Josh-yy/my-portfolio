@@ -22,7 +22,7 @@ function Navigation(){
                         <a href="#contact">Contact</a>
                     </li>
                 </ul>
-                <PrimaryButton href="/Resume.pdf" text="Resume"></PrimaryButton>
+                <PrimaryButton href="/my-portfolio/Resume.pdf" text="Resume"></PrimaryButton>
             </div>
         </nav>
     );

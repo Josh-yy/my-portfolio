@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import styles from "./Modal.module.css";
 
-export default function Modal({ resumeHref = "/Resume.pdf", contactHref = "mailto:markjoshuaurbano@gmail.com" }) {
+export default function Modal({ resumeHref = "/my-portfolio/Resume.pdf", contactHref = "mailto:markjoshuaurbano@gmail.com" }) {
   const dialogRef = useRef(null);
   const primaryBtnRef = useRef(null);
   const [open, setOpen] = useState(false);
