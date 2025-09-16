@@ -2,7 +2,9 @@
   max-width: 30%;
   display: flex;
   flex-direction: column;
-  gap: 1.5em
+  gap: 1.5em;
+  animation: slideUp 2.5s ease forwards;
+  animation-delay: 6.3s;
 }
 
 .container p {
@@ -27,3 +29,12 @@
   color: var(--text-white-2);
   line-height: 1.5;
 }
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100vh);
+    }
+    to{
+        transform: translateY(0);
+    }
+  }

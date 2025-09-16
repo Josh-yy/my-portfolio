@@ -5,6 +5,7 @@ import Landing from './Landing/Landing.jsx'
 import Loading from './Loading/Loading.jsx'
 import AboutMe from './AboutMe/AboutMe.jsx'
 import Projects from './Projects/Projects.jsx'
+import Modal from './Modal/Modal.jsx'
 import './index.css'
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <>
       <main>
         <Loading></Loading>
+        <Modal></Modal>
         <CursorEffect></CursorEffect>
 
         <Navigation></Navigation>

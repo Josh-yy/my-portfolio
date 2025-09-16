@@ -75,7 +75,7 @@
 .word{
     font-size: 20vh;
     transform: translateY(25vh);
-    animation: transUp 6s ease forwards;
+    animation: transUp 5s ease forwards;
     animation-delay: 1.5s;
 }
 
@@ -101,7 +101,7 @@
         opacity: 1;
     }
     100%{
-        transform: translateY(-100vh);
+        transform: translateY(-110vh);
         opacity: 0;
         display: none;
         visibility: hidden;
