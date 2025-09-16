@@ -1,0 +1,70 @@
+.navigationBar{
+    display: flex;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;   
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 1em 5%;
+    color: var(--text-white);
+}
+
+a{
+    text-decoration: none;
+}
+
+.navigationBar a:hover{
+    color: var(--primary);
+}
+
+.navLogo{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+
+.imageContainer{
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px var(--text-white) solid;
+}
+
+.imageContainer img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.navigationBar ul{
+    display: flex;
+    gap: 2em
+}
+
+.navigationBar ul li{
+    list-style: none;
+}
+
+.navigationBar ul li a{
+    color: var(--text-white);
+}
+
+.navLinks{
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+
+.josh{
+    /* font-size: 1.3em; */
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+
+
+

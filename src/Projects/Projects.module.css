@@ -1,0 +1,142 @@
+.container{
+  min-width: 60%;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.projectContainer{
+   display: flex;
+   gap: 1em; 
+   align-items: center;
+   position: relative;
+   margin:10em 0;
+}
+
+.projectContainer:nth-child(2) {
+   justify-content: end;
+}
+
+.projectContainer:nth-child(4) {
+   justify-content: end;
+}
+
+.techStack{
+    display: flex;
+    gap: 1em;
+    font-size: .8em;
+}
+
+.techStack p:hover{
+    color: var(--primary);
+    cursor: default;
+}
+
+.detailsContainer{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+    gap: 1em;
+}
+
+.detailsContainer:nth-child(2) {
+   align-items: end;
+}
+
+.detailsContainer:nth-child(4) {
+   align-items: end;
+}
+
+.detailsContainer p{
+    line-height: 1.5;
+    color: var(--text-white-2);
+}
+
+.detailsContainer h2{
+    color: var(--primary);
+    font-size: 1em;
+}
+
+:global(.imageContainer) {
+  display: flex;
+  position: absolute;
+  right: 0;
+  width: 40%;             
+  transition: all 0.5s ease;
+  border-radius: 1em;
+  overflow: hidden;
+}
+
+.projectContainer:nth-of-type(2) :global(.imageContainer),
+.projectContainer:nth-of-type(4) :global(.imageContainer) {
+  left: 0;
+}
+
+:global(.imageContainer) img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  filter: grayscale(100%) sepia(100%) brightness(50%) hue-rotate(217deg) saturate(1000%);
+  transition: all .5s ease;
+}
+
+:global(.imageContainer):hover{
+  width: 70%;
+}
+
+:global(.imageContainer):hover img{
+  filter: none;
+  z-index: 0;
+}
+
+
+:global(.next){
+    width: 2em;
+    height: 2em;
+    padding: 2em;
+    background-color: transparent;
+    color: var(--primary);
+    position: fixed;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    font-size: 1em;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+    background-color: black;
+    filter: invert(100%);
+    mix-blend-mode: difference;
+}
+
+:global(.prev){
+    width: 2em;
+    height: 2em;
+    padding: 2em;
+    background-color: transparent;
+    color: var(--primary);
+    position: fixed;
+    border-radius: 50%;
+    top: 0;
+    left: 0;
+    font-size: 1em;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 10;
+    background-color: black;
+    filter: invert(100%);
+    mix-blend-mode: difference;
+}

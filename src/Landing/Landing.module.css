@@ -1,0 +1,29 @@
+.container{
+  max-width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5em
+}
+
+.container p {
+  font-size: 2rem;
+  color: var(--gray-100);
+  font-weight: 500;
+}
+
+.container p:nth-child(1){
+  color: var(--primary);
+  font-size: 1em;
+}
+
+.container p:nth-child(2){
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.container p:nth-child(3){
+  font-size: 1em;
+  width: 100%;
+  color: var(--text-white-2);
+  line-height: 1.5;
+}

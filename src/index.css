@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*, *::before, *::after{
+
+  margin: 0;
+  font-family: 'Archivo', 'sans-serif';
+  padding: 0;
+}
+
+:root{
+  --text-white: #eeeeee;
+  --text-white-1: #dddddd;
+  --text-white-2: #ceccff;
+  --text-white-3: #675fdb9c;
+  --background: #02001d;
+  --primary: #675fdb;
+  --primary-hover: #675fdb34;
+  --secondary: #a7c6ab;
+  --accent: #8db6ac;
+}
+
+html, body {
+  scroll-behavior: smooth; /* optional: smooth transition */
+}
+
+main {
+  scroll-snap-type: y mandatory; /* 👈 snap on vertical scroll */
+}
