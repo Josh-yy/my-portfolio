@@ -1,0 +1,19 @@
+.footer {
+  background-color: var(--background);
+  color: var(--text-white-2);
+  padding: 20px 40px;
+  text-align: center;
+  position: relative;
+}
+
+.footerContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.footerText {
+  font-size: 14px;
+  opacity: 0.8;
+}
