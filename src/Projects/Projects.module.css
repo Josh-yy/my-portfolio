@@ -1,3 +1,7 @@
+a{
+  color: var(--text-white);
+}
+
 .container{
   min-width: 60%;
   max-width: 60%;
@@ -74,7 +78,7 @@
 
 :global(.imageContainer) img {
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   object-fit: cover;
   object-position: center;
   filter: grayscale(100%) sepia(100%) brightness(50%) hue-rotate(217deg) saturate(1000%);
@@ -82,7 +86,7 @@
 }
 
 :global(.imageContainer):hover{
-  width: 70%;
+  width: 60%;
 }
 
 :global(.imageContainer):hover img{
@@ -90,53 +94,19 @@
   z-index: 0;
 }
 
-
-:global(.next){
-    width: 2em;
-    height: 2em;
-    padding: 2em;
-    background-color: transparent;
-    color: var(--primary);
-    position: fixed;
-    border-radius: 50%;
-    top: 0;
-    left: 0;
-    font-size: 1em;
-    font-weight: 900;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 1;
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    z-index: 10;
-    background-color: black;
-    filter: invert(100%);
-    mix-blend-mode: difference;
+.fontIcon{
+  height: 18px;
+  width: 18px;
+  color: var(--text-white-3);
 }
 
-:global(.prev){
-    width: 2em;
-    height: 2em;
-    padding: 2em;
-    background-color: transparent;
-    color: var(--primary);
-    position: fixed;
-    border-radius: 50%;
-    top: 0;
-    left: 0;
-    font-size: 1em;
-    font-weight: 900;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 1;
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    z-index: 10;
-    background-color: black;
-    filter: invert(100%);
-    mix-blend-mode: difference;
+.fontIcon:hover{
+  color: var(--primary);
+  cursor: pointer;
+}
+
+.actionContainer{
+  display: flex;
+  gap: 1em;
+  align-items: center;
 }
