@@ -6,7 +6,7 @@ function AboutMe(){
         <div className={styles.container}>
             <div className={styles.detailsContainer}>
                 <p>
-                    About me
+                    Mark Joshua Urbano
                 </p>
                 <p>
                     Hi, I’m <strong>Mark Joshua Urbano</strong>, a recent BSIT graduate major in System Development from Central Luzon State University (CLSU)

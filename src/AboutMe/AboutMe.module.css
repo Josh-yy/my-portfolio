@@ -25,7 +25,7 @@
 }
 
 .image{
-    border: 2px var(--primary) dotted;
+    border: .5em var(--primary) dotted;
     width: 15em;
     border-radius: 50%;
     overflow: hidden;
