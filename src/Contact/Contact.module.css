@@ -1,0 +1,38 @@
+.container {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  margin-bottom: 2rem;
+}
+
+.contactLinks {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.contactLinks a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: var(--text-white-1);
+  transition: color 0.3s ease;
+}
+
+.contactLinks a:hover {
+  color: var(--primary)
+}
+
+.icon {
+  font-size: 1.5rem;
+}

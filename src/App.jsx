@@ -5,8 +5,12 @@ import Landing from './Landing/Landing.jsx'
 import Loading from './Loading/Loading.jsx'
 import AboutMe from './AboutMe/AboutMe.jsx'
 import Projects from './Projects/Projects.jsx'
+import Contact from './Contact/Contact.jsx'
+import Footer from './Footer/Footer.jsx'
 import Modal from './Modal/Modal.jsx'
 import './index.css'
+
+
 
 function App() {
 
@@ -17,7 +21,7 @@ function App() {
         <Modal></Modal>
         <CursorEffect></CursorEffect>
 
-        <Navigation></Navigation>
+        <Navigation/>
 
         <Section id="home">
           <Landing />
@@ -32,10 +36,9 @@ function App() {
         </Section>
 
         <Section  id="contact">
-          <div>
-            <p>©</p>
-          </div>
+          <Contact/>
         </Section>
+        <Footer/>
       </main>
       
     </>
