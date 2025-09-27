@@ -1,48 +1,25 @@
-import Navigation from './NavigationBar/Navigation.jsx'
-import CursorEffect from './CursorEffect/CursorEffect.jsx'
-import Section from './Section/Section.jsx'
-import Landing from './Landing/Landing.jsx'
-import Loading from './Loading/Loading.jsx'
-import AboutMe from './AboutMe/AboutMe.jsx'
-import Projects from './Projects/Projects.jsx'
-import Contact from './Contact/Contact.jsx'
-import Footer from './Footer/Footer.jsx'
-import Modal from './Modal/Modal.jsx'
-import './index.css'
-
-
+import { Outlet, ScrollRestoration } from "react-router-dom";
+import CursorEffect from "./components/CursorEffect/CursorEffect.jsx";
+import Footer from "./components/Footer/Footer.jsx";
+import Loading from "./components/Loading/Loading.jsx";
+import Modal from "./components/Modal/Modal.jsx";
+import "./index.css";
 
 function App() {
-
   return (
     <>
-      <main>
-        <Loading></Loading>
-        <Modal></Modal>
-        <CursorEffect></CursorEffect>
+      <CursorEffect />
+      <Loading />
+      <Modal />
 
-        <Navigation/>
+      <Outlet />
 
-        <Section id="home">
-          <Landing />
-        </Section>
-
-        <Section  id="aboutme">
-          <AboutMe />
-        </Section>
-
-        <Section  id="projects">
-          <Projects />
-        </Section>
-
-        <Section  id="contact">
-          <Contact/>
-        </Section>
-        <Footer/>
-      </main>
       
+
+      <Footer />
+      <ScrollRestoration />
     </>
-  )
+  );
 }
 
-export default App
+export default App;
