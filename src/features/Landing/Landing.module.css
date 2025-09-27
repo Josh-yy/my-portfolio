@@ -30,6 +30,20 @@
   line-height: 1.5;
 }
 
+.primaryButton{
+    display: inline-block;
+    background-color: transparent;
+    color: var(--primary);
+    font-size: .8em;
+    padding: 1em;
+    border-radius: .5em;
+    border: var(--primary) 1.5px solid;
+}
+
+.primaryButton:hover{
+    background-color: var(--primary-hover);
+}
+
 @keyframes slideUp {
     from {
         transform: translateY(100vh);

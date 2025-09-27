@@ -1,5 +1,5 @@
 import styles from './Landing.module.css'
-import PrimaryButton from '../PrimaryButton/PrimaryButton';
+import PrimaryButton from '../../components/PrimaryButton/PrimaryButton';
 
 function Landing(){
     return(
@@ -16,7 +16,7 @@ function Landing(){
                 crafting digital experiences that make an impact.
             </p>
             <div className={styles.buttons}>
-                <PrimaryButton href="#projects" text="View My Work"></PrimaryButton>
+                <a className={styles.primaryButton} href="#projects">View my work</a>
             </div>
         </div>
     );
