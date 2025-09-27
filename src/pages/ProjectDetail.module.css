@@ -1,0 +1,42 @@
+p{
+    line-height: 1.5;
+    color: var(--text-white-2);
+}
+
+.container div{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.header{
+    font-size: clamp(2em, 3vw, 5vw);
+    width: 70%;
+}
+
+.container{
+    display: flex;
+    gap: 3em;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 5% 10%;
+    width: 60%;
+}
+
+.subHeading{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.functionContainer img{
+    width: 100%;
+}
+
+.functionContainer{
+    margin-bottom: 5em;
+}
+
+.actionContainer{
+   width: auto;
+}
