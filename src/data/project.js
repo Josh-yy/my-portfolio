@@ -49,6 +49,7 @@ const projects = [
     image: torImg,
     documentation: true,
     typeOfProject: "Internship Project",
+    completed: "2023",
     projectGoal:
       "The development of the Transcript of Records automation system is to help RIC staff transition from the traditional Excel-based TOR process into more efficient and automated solutions. The development of the TOR system is intended to assist in the preparation, rechecking, and management of approval and rejection workflows, as well as in facilitating the final printing of TORs—particularly benefiting staff who may not be technically proficient.",
     methodology: "Agile Methodology",
@@ -61,7 +62,7 @@ const projects = [
         tools: [
           {
             name: "Laravel Excel",
-            url: "https://sampleurl.com"
+            url: "https://laravel-excel.com/"
           }
         ]
       },
@@ -72,8 +73,8 @@ const projects = [
           "Displays student records uploaded from Excel. This interface supports full CRUD functionalities. The green eye icon indicates that the student's Transcript of Records (TOR) has been released. The blue pen icon is used to edit a student record, while the orange print icon is for preparing a new TOR. [See the next function for details on the preparation interface.]",
         tools: [
           {
-            name: null,
-            url: null
+            name: "SweetAlert2",
+            url: "https://sweetalert2.github.io/"
           }
         ]
       },
@@ -84,8 +85,8 @@ const projects = [
           "This is where a student's Transcript of Records is prepared. All details of the final TOR are reviewed and finalized here. The interface is fully dynamic and supports CRUD operations for efficient management.",
         tools: [
           {
-            name: null,
-            url: null
+            name: "Select2",
+            url: "https://select2.org/"
           }
         ]
       },
@@ -152,25 +153,26 @@ const projects = [
     image: itamsImg,
     documentation: true,
     typeOfProject: "Capstone Project",
+    completed: "2025",
     projectGoal:
     "The PHINMA - Education Network is composed of various educational institutions, each with its own set of IT assets. These assets are vital for ensuring that the institution delivers quality education and running its operations effectively. The management of several IT resources, including hardware, softwares, and licenses, is under the responsibility of the IT services department. Currently, asset management is done using a Google Sheet. Updating assets of a university manually in a Google Sheet can be difficult and takes a lot of effort, especially if there are a large number of assets. The aim of this proposal is to design and develop an IT asset management system that can effectively replace the current Google Sheets-based system and help the PHINMA - Education Network manage and monitor its IT assets effectively. This proposal also includes a system that will use QR-code tagging to track each asset and provide real-time information on the status of each asset.",
     methodology: "Software Development Life Cycle (SDLC)",
     functionality: [
       {
         name: "Landing Page / Home Page",
-        image: [torImg],
+        image: ["/my-portfolio/itams/landing_page.png"],
         description:
         "Landing Page or Home Page of the IT Asset Management System. Upon login, users are directed to the dashboard, where they could see asset distribution graphs and the navigation menu on the left to access the features of the system.",
         tools: [
           {
-            name: "Laravel Excel",
-            url: "https://sampleurl.com"
+            name: null,
+            url: null,
           }
         ]
       },
       {
         name: "System Users Page",
-        image: [torImg, torImg],
+        image: ["/my-portfolio/itams/system_user.png"],
         description:
         "System Users Page, which was only visible to the Administrator interface. This is where new users are added, assigned a role and deactivated when they left the service of PHINMA.",
         tools: [
@@ -182,7 +184,7 @@ const projects = [
       },
       {
         name: "Hardware Management Page",
-        image: [torImg],
+        image: ["/my-portfolio/itams/hardware_management.png"],
         description:
         "Hardware Management Page, which was only visible to the Administrator and IT Specialist interface. The page shows the list of all the hardware assets stored in the system which include their QR-code tag.",
         tools: [
@@ -194,7 +196,7 @@ const projects = [
       },
       {
         name: "Asset Disposal Page",
-        image: [torImg],
+        image: ["/my-portfolio/itams/asset_disposal.png"],
         description:
         "Asset Disposal Page, which was only visible to the Administrator and IT Specialist interface. This is where the hardware assets are configured if their status is for disposal.",
         tools: [
@@ -206,7 +208,7 @@ const projects = [
       },
       {
         name: "Asset Disposed Report Analytics Page",
-        image: [torImg],
+        image: ["/my-portfolio/itams/asset_analytics.png"],
         description:
         "Asset Disposed Report Analytics Page, which is only visible to the Administrator, IT Specialist, and Customer Service Manager/ Infrastructure Manager’s interface. It is composed of all the hardware assets that have been disposed of over the years.",
         tools: [
@@ -218,7 +220,7 @@ const projects = [
       },
       {
         name: "User Roles Configuration Page",
-        image: [torImg],
+        image: ["/my-portfolio/itams/user_config.png"],
         description:
         "User Roles Configuration Page, which is exclusively accessible through the Administrator's interface. This page allows the Administrator to set up and associate assignment types to specific user roles, determining which system areas are accessible to the system users.",
         tools: [
@@ -230,7 +232,7 @@ const projects = [
       },
       {
         name: "Email Configuration Page",
-        image: [torImg],
+        image: ["/my-portfolio/itams/email_config.png"],
         description: 
         "Email Configuration Page, only visible to the Administrator’s interface. Users who can receive hardware disposal and software expiration email notifications are configured on this page and set the baseline (days) when to trigger the software expiration email notification to the users.",
         tools: [
