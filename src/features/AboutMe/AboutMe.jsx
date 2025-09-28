@@ -1,4 +1,4 @@
-import me from '../../assets/hero.png'
+import me from '../../assets/hero.webp'
 import styles from './AboutMe.module.css'
 
 function AboutMe(){
