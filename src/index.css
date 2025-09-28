@@ -13,19 +13,60 @@
   --text-white: #eeeeee;
   --text-white-1: #dddddd;
   --text-white-2: #ceccff;
-  --text-white-3: #9c98ff;
+  --text-white-3: rgba(155, 152, 255, 0.589);
   --background: #02001d;
   --primary: #675fdb;
   --primary-hover: #675fdb34;
   --secondary: #a7c6ab;
   --accent: #8db6ac;
+
 }
 
 html, body {
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
 }
 
 main {
   scroll-snap-type: y mandatory;
+}
+
+a:hover{
+  color: var(--text-white);
+}
+
+h1{
+  font-size: clamp(2rem, 5vw, 4rem);
+}
+
+h2{
+  font-size: clamp(1.5rem, 4.5vw, 3rem);
+}
+
+h3{
+  font-size:clamp(1.3rem, 3.5vw, 2rem);
+  font-weight: 500;
+}
+
+h4{
+  font-size: clamp(1.1rem, 3vw, 1.5rem);
+}
+
+p{
+  font-size: clamp(1rem, 2vw, 1.2rem);
+}
+
+h6{
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  color: var(--text-white-2);
+  font-weight: 500;
+}
+
+sub{
+  font-size: clamp(.8rem, 1vw, 1rem);
+  color: var(--text-white-3);
+}
+
+a{
+  color: var(--text-white);
 }
 
