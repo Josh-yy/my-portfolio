@@ -1,7 +1,4 @@
-p{
-    line-height: 1.5;
-    color: var(--text-white-2);
-}
+
 
 .container div{
     display: flex;
@@ -9,9 +6,12 @@ p{
     gap: 1em;
 }
 
-.header{
-    font-size: clamp(2em, 3vw, 5vw);
-    width: 70%;
+
+
+p{
+    line-height: 1.5;
+    color: var(--text-white-2);
+    font-size: var(--font-body);
 }
 
 .container{
@@ -19,7 +19,7 @@ p{
     gap: 3em;
     flex-direction: column;
     min-height: 100vh;
-    padding: 5% 10%;
+    padding: clamp(.5em, 5vw, 10vw);
     width: 60%;
 }
 
@@ -39,4 +39,14 @@ p{
 
 .actionContainer{
    width: auto;
+}
+
+.toolLink:hover sub{
+    color: var(--text-white-2);
+}
+
+@media (width < 600px) {
+    .container{
+        width: 90%;
+    }
 }

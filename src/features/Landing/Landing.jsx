@@ -7,9 +7,9 @@ function Landing(){
             <p>
                 Hi, my name is
             </p>
-            <p>
+            <h2>
                 Mark Joshua Urbano
-            </p>
+            </h2>
             <p>
                 I build responsive and user-friendly websites with PHP, Laravel, 
                 JavaScript, and modern front-end frameworks. Passionate about 

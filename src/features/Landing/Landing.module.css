@@ -52,3 +52,9 @@
         transform: translateY(0);
     }
   }
+
+@media (width < 600px) {
+  .container{
+    max-width: 90%;
+  }
+}

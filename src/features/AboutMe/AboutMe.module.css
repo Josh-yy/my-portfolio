@@ -15,6 +15,7 @@
 .imageContainer{
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .detailsContainer{
@@ -48,4 +49,14 @@
 
 .detailsContainer p:nth-child(4){
     color: var(--text-white-2);
+}
+
+@media (width < 600px) {
+    .container{
+        max-width: 90%;
+        flex-direction: column;
+        justify-content: center;
+        padding: 5em 0;
+    }
+
 }

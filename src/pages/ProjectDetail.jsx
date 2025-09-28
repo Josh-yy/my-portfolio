@@ -20,29 +20,43 @@ function ProjectDetail() {
           </Link>
           <div>
             <h1 className={styles.header}>{project.title}</h1>
-          </div>
-          <div>
-            <p>
+            <h6>
+              {project.typeOfProject} <strong>·</strong> {`Completed — ${project.completed}`}
+            </h6>
+            <sub>
               {project.tech.map((t, index) => (
                 `${t}${index < project.tech.length - 1 ? " | " : ""}` 
               ))}
-            </p>
+            </sub>
           </div>
           <div className={styles.subHeading}>
-            <h1>Project Goal</h1>
+            <h2>Project Goal</h2>
             <p>
               {project.projectGoal}
             </p>
           </div>
           <div>
-            <h1>Note worthy functionlities</h1>
+            <h3>Note worthy functionlities</h3>
             {project.functionality.map((f, index) => (
               <div key={f.name} className={styles.functionContainer}>
                 {f.image.map((i, index) => (
                   <img src={i} alt={f.name} />
                 ))}
-                <h3>{f.name}</h3>
+                <h4>{f.name}</h4>
                 <p>{f.description}</p>
+                {f.tools?.map((tool) =>
+                  tool.name ? (
+                    <a 
+                      className={styles.toolLink}
+                      key={tool.name}
+                      href={tool.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <sub>Plugin used: {tool.name}</sub>
+                    </a>
+                  ) : null
+                )}
               </div>
             ))}
           </div>
