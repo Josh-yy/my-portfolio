@@ -1,5 +1,5 @@
 .container{
-  max-width: 30%;
+  width: min(90vw, 600px);
   display: flex;
   flex-direction: column;
   gap: 1.5em;
@@ -44,17 +44,15 @@
     background-color: var(--primary-hover);
 }
 
-@keyframes slideUp {
-    from {
-        transform: translateY(100vh);
-    }
-    to{
-        transform: translateY(0);
-    }
-  }
+.heroName{
+  text-wrap: nowrap;
+}
 
-@media (width < 600px) {
-  .container{
-    max-width: 90%;
+@keyframes slideUp {
+  from {
+      transform: translateY(100vh);
+  }
+  to{
+      transform: translateY(0);
   }
 }

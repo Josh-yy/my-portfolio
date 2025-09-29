@@ -7,7 +7,8 @@
     justify-content: space-between;
     align-items: center;
     background-color: transparent;
-    padding: 1em 5%;
+    padding: max(1vw, 2vw) max(1vw, 2vw);
+    padding-top: 1vw;
     color: var(--text-white);
 }
 

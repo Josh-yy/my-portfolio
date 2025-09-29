@@ -26,7 +26,7 @@ function Navigation() {
         <span className={styles.josh}>josh.urbz</span>
       </div>
 
-      <div className={styles.navLinks}>
+      <nav className={styles.navLinks}>
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#aboutme">About</a></li>
@@ -37,10 +37,10 @@ function Navigation() {
         <IconButton onClick={() => setIsOpen(true)}>
           <FontAwesomeIcon icon={faBars} className={styles.icon}/>
         </IconButton>
-      </div>
+      </nav>
 
       {isOpen && (
-        <div className={styles.sidebar}>
+        <nav className={styles.sidebar}>
           <ul>
             <li>
               <IconButton onClick={() => setIsOpen(false)}>
@@ -53,7 +53,7 @@ function Navigation() {
             <li><a onClick={() => setIsOpen(false)} href="#contact">Contact</a></li>
           </ul>
           <PrimaryButton text="Resume" />
-        </div>
+        </nav>
       )}
     </nav>
   );

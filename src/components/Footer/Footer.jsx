@@ -6,11 +6,9 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 export default function Footer() {
   return (
     <footer className={styles.footer}>
-      <div className={styles.footerContent}>
-        <sub className={styles.footerText}>
-          {new Date().getFullYear()} · Mark Joshua Urbano · Some bugs may apply :)
-        </sub>
-      </div>
+      <sub>
+        {new Date().getFullYear()} · Mark Joshua Urbano · Some bugs may apply :)
+      </sub>
     </footer>
   );
 }

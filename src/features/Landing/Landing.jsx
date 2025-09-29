@@ -7,7 +7,7 @@ function Landing(){
             <p>
                 Hi, my name is
             </p>
-            <h2>
+            <h2 className={styles.heroName}>
                 Mark Joshua Urbano
             </h2>
             <p>
