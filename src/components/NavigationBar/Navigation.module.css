@@ -92,7 +92,7 @@ a{
     gap: 1em;
     align-items: center;
     animation: slideUp 2s ease forwards;
-    animation-delay: 7s;
+    animation-delay: 7.25s;
 }
 
 .josh{
@@ -100,8 +100,8 @@ a{
     font-weight: 500;
     display: flex;
     align-items: center;
-    animation: slideUp 2s ease forwards;
-    animation-delay: 6s;
+    animation: slideUp 2.5s ease forwards;
+    animation-delay: 6.25s;
 }
 
 @keyframes slideUp {

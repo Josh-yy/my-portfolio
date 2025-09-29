@@ -6,12 +6,9 @@
     gap: 1em;
 }
 
-
-
 p{
     line-height: 1.5;
     color: var(--text-white-2);
-    font-size: var(--font-body);
 }
 
 .container{

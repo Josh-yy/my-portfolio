@@ -12,8 +12,8 @@
     width: 10vw;
     height: 100vh;
     background-color: rgb(19, 19, 19);
-    animation-timing-function: linear;
-    animation: transition1by1 2s forwards;
+    animation-timing-function: ease;
+    animation: transition1by1 5s forwards;
     
 }
 
@@ -59,7 +59,7 @@
     align-items: center;
     color: aliceblue;
     overflow: hidden;
-    padding-left: 10vh;
+    /* padding-left: max(5%, 1px); */
     animation: dissapear 1s ease forwards;
     animation-delay: 9s;
 }
@@ -67,41 +67,41 @@
 .words{
     display: flex;
     flex-direction: column;
-    height: 20vh;
+    height: clamp(4em, 15vw, 15vw);
     padding-bottom: 1%;   
     overflow: hidden;
 }
 
 .word{
-    font-size: 20vh;
-    transform: translateY(25vh);
-    animation: transUp 5.5s ease forwards;
+    font-size: clamp(4em, 15vw, 15vw);
+    transform: translateY(15vw);
+    animation: transUp 6s ease forwards;
     animation-delay: 1.5s;
 }
 
 @keyframes transUp {
     0% {
-        transform: translateY(25vh);
+        transform: translateY(15vw);
     }
     15% {
         transform: translateY(0);
     }
     30% {
-        transform: translateY(-25vh);
+        transform: translateY(-17vw);
     }
     45% {
-        transform: translateY(-45vh);
+        transform: translateY(-33vw);
     }
     60% {
-        transform: translateY(-65vh);
+        transform: translateY(-48vw);
         
     }
     75% {
-        transform: translateY(-85vh);
+        transform: translateY(-65vw);
         opacity: 1;
     }
     100%{
-        transform: translateY(-110vh);
+        transform: translateY(-110vw);
         opacity: 0;
         display: none;
         visibility: hidden;
@@ -114,7 +114,7 @@
         transform: translateY(0);
     }
     to{
-        transform: translateY(-100vh);
+        transform: translateY(-100vw);
     }
 }
 
@@ -125,4 +125,25 @@
         visibility: hidden;
         pointer-events: none;
     }
+}
+
+@media (width < 600px) {
+    .bar{
+        animation-timing-function: ease;
+        animation: transition1by1 3s forwards;
+    }
+
+    .overlay{
+        animation: dissapear 1s ease forwards;
+        animation-delay: 9s;
+    }
+
+    @keyframes transition1by1 {
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-110vh);
+    }
+}
 }
