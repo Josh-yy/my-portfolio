@@ -93,13 +93,13 @@
 }
 
 .fontIcon{
-  height: 18px;
-  width: 18px;
-  color: var(--text-white-3);
+  height: 24px;
+  width: 24px;
+  color: var(--primary);
 }
 
 .fontIcon:hover{
-  color: var(--primary);
+  color: var(--text-white-2);
   cursor: pointer;
 }
 

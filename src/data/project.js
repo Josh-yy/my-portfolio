@@ -10,7 +10,7 @@ const projects = [
     title: "Anime Tracker",
     description:
       "Developed a PHP web app inspired by MyAnimeList with an anime database and tracking lists. Integrated the MAL API to display real-time data on top airing, upcoming, and popular anime.",
-    tech: ["PHP", "MySQL", "JavaScript (jQuery)", "MAL API"],
+    tech: ["PHP", "MySQL", "JavaScript (jQuery)", "REST API (MyAnimeList API)"],
     github: "https://github.com/Josh-yy/AnimeTracker",
     live: null,
     image: animeImage,
@@ -21,7 +21,7 @@ const projects = [
     title: "Rocket Comparison System",
     description:
       "Nuxt 3 + Vue 3 app using SpaceX GraphQL API. Users can compare rockets, view upcoming launches, and filter launch history.",
-    tech: ["Nuxt", "Vue", "TypeScript", "GraphQL (SpaceX API)"],
+    tech: ["Nuxt.js", "Vue 3", "TypeScript", "GraphQL (SpaceX API)"],
     github: "https://github.com/Josh-yy/NuxtExam",
     live: "https://nuxt-exam-gamma.vercel.app/",
     image: rocketImage,
@@ -32,7 +32,7 @@ const projects = [
     title: "Content Management System",
     description:
       "Developed a CMS that allows users to create, manage, and publish website content without coding. Provided an intuitive interface for both technical and non-technical users.",
-    tech: ["PHP", "JavaScript", "MySQL"],
+    tech: ["PHP", "JavaScript (jQuery)", "MySQL", "TinyMCE", "OAauth2 (Google, Meta)"],
     github: "https://github.com/Josh-yy/CMS",
     live: null,
     image: cmsImage,
@@ -43,7 +43,7 @@ const projects = [
     title: "Automated Transcript of Records System",
     description:
       "Built a web system to automate TOR preparation, review, approval, and printing. Included modules for student management, grade handling, and record verification.",
-    tech: ["Laravel", "Laravel Excel", "JavaScript", "MySQL"],
+    tech: ["Laravel 11", "Laravel Excel", "JavaScript (ES6+)", "MySQL"],
     github: null,
     live: null,
     image: torImg,

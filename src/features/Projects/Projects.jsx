@@ -22,24 +22,24 @@ function Projects(){
 
                         <div className={styles.techStack}>
                         {p.tech.map((t) => (
-                            <p key={t}>{t}</p>
+                            <sub key={t}>{t}</sub>
                         ))}
                         </div>
 
                         <div className={styles.actionContainer}>
                         {p.github && (
-                            <a href={p.github} target="_blank">
+                            <a href={p.github} target="_blank" title='Check on GitHub'>
                             <FontAwesomeIcon icon={faGithub} className={styles.fontIcon} />
                             </a>
                         )}
                         {p.live && (
-                            <a href={p.live} target="_blank">
+                            <a href={p.live} target="_blank" title='External link'>
                             <FontAwesomeIcon icon={faLink} className={styles.fontIcon}/>
                             </a>
                         )}
                         {p.documentation && (
                             <Link to={`project/${p.id}`}>
-                            <PrimaryButton text="View in Details" />
+                            <PrimaryButton text="View in Detail" />
                             </Link>
                         )}
                         </div>
